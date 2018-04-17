@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server --mode development --entry ./src/js/app.js --output-filename ./dist/bundle.js",
-    "dev": "webpack --entry ./src/js/app.js --output-filename bundle.js -p"
+    "build": "webpack-dev-server --mode development",
+    "dev": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.3"
